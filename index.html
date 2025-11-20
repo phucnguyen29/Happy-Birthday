@@ -246,12 +246,15 @@
     mailBox.onclick = function () {
         mailBox.classList.toggle('active')
         boxmail.classList.add('active')
+        boxmail.classList.add('open')
     }
 
     close.addEventListener('click', function () {
         boxmail.classList.remove('active')
+        boxmail.classList.remove('open')
     })
 </script>
 
 
 </html>
+
