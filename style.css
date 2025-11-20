@@ -834,11 +834,11 @@ body {
     perspective: 2000px;
     transition: all 0.5s;
 }
-.boxMail .boxMail-container:hover{
+.boxMail.open .boxMail-container{
     transform: rotate(-5deg);
     filter: drop-shadow(0 0 10px #FF7882);
 }
-.boxMail .boxMail-container:hover .card1{
+.boxMail.open .boxMail-container .card1{
     transform: translate(-187px, -250px) rotateY(-140deg);
 }
 .boxMail .boxMail-container .card1,
@@ -918,7 +918,7 @@ body {
     font-family: "Inter", serif;
     color: #fff;
 }
-.boxMail .boxMail-container:hover .card2-content{
+.boxMail.open .boxMail-container .card2-content{
     transform: translate(20px, 20px);
     box-shadow: -1px -1px 5px rgb(0, 0, 0, 0.4);
 }
@@ -1022,4 +1022,5 @@ body {
     cursor: pointer;
     color: white;
     z-index: 10000000000000000;
+
 }
